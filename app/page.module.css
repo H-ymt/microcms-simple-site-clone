@@ -6,8 +6,6 @@
   color: var(--color-text-unpainted);
 }
 
-
-
 .topImage {
   height: 100vh;
   object-fit: cover;
