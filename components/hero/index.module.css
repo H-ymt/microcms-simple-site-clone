@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    position: relative;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-text-unpainted);
+}
+
+.topImage {
+    height: 70vh;
+    object-fit: cover;
+}
+
+.topText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.title {
+    font-size: 40px;
+    font-family: var(--font);
+}
+
+.sub {}
+
+@media (min-width:768px) {
+    .title {
+        font-size: 56px;
+    }
+}
