@@ -32,7 +32,7 @@ export default function Menu() {
         </button>
       </nav>
 
-      <button className={styles.button} onClick={open}>
+      <button className={cx(styles.button, styles.open)} onClick={open}>
         <Image src="/hamburger.svg" alt="メニューを開く" width={32} height={32} />
       </button>
     </div>
