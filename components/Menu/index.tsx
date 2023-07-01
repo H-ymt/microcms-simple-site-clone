@@ -14,16 +14,16 @@ export default function Menu() {
     <div>
       <nav className={cx(styles.nav, isOpen && styles.open)}>
         <ul className={styles.list}>
-          <Link className={styles.item} href="/">
+          <Link className={styles.item} href="/news">
             <li>News</li>
           </Link>
-          <Link className={styles.item} href="/">
+          <Link className={styles.item} href="/member">
             <li>Member</li>
           </Link>
-          <Link className={styles.item} href="/">
+          <Link className={styles.item} href="/recruit">
             <li>Recruit</li>
           </Link>
-          <Link className={styles.item} href="/">
+          <Link className={styles.item} href="/contact">
             <li>Contact</li>
           </Link>
         </ul>
