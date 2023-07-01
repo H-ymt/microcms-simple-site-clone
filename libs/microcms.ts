@@ -58,6 +58,19 @@ export const getNewsList = async (queries?: MicroCMSQueries) => {
   return listData;
 };
 
+// ニュースの詳細を取得
+export const getNewsDetail = async (contentId: string, queries?: MicroCMSQueries) => {
+  const detailData = await client
+    .getListDetail<News>({
+      endpoint: "news",
+      contentId,
+      queries,
+    })
+    .catch(notFound);
+
+  return detailData;
+};
+
 // カテゴリーの一覧を取得
 export const getCategoryList = async (queries?: MicroCMSQueries) => {
   const listData = await client
