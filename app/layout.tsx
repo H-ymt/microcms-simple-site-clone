@@ -1,5 +1,6 @@
 import "./globals.css";
 import styles from "./layout.module.css";
+import Header from "@/components/Header";
 
 export const metadata = {
   title: "コーポレートサイト",
@@ -9,7 +10,10 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ja">
-      <body className={styles.body}>{children}</body>
+      <body className={styles.body}>
+        <Header />
+        <main>{children}</main>
+      </body>
     </html>
   );
 }
