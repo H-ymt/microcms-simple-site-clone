@@ -2,6 +2,7 @@ import Image from "next/image";
 import { formatRichText } from "@/libs/utils";
 import { type Article } from "@/libs/microcms";
 import styles from "./index.module.css";
+import PublishDate from "../Date";
 
 type Props = {
   data: Article;
@@ -12,6 +13,9 @@ export default function Article({ data }: Props) {
     <main>
       <h1 className={styles.title}>{data.title}</h1>
       <p className={styles.description}>{data.description}</p>
+      <div className={styles.meta}>
+        <PublishDate date={data.publishedAt || data.createdAt} />
+      </div>
       {data.thumbnail && (
         <Image
           src={data.thumbnail?.url}
