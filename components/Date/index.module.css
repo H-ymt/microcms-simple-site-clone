@@ -5,3 +5,8 @@
     margin: 0.8rem 0;
     font-size: 1rem;
 }
+
+.date img {
+    width: 24px;
+    height: 24px;
+}
