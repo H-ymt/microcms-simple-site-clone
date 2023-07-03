@@ -15,6 +15,7 @@ export default function NewsListItem({ news }: Props) {
           <Image
             src={news.thumbnail?.url}
             alt=""
+            className={styles.thumbnail}
             width={news.thumbnail?.width}
             height={news.thumbnail?.height}
           />
@@ -23,7 +24,6 @@ export default function NewsListItem({ news }: Props) {
         )}
         <dl className={styles.content}>
           <dt className={styles.title}>{news.title}</dt>
-          <dd className={styles.meta}>Category</dd>
         </dl>
       </Link>
     </li>

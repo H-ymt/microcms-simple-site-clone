@@ -12,6 +12,7 @@ export default function RootLayout({ children }: Props) {
   return (
     <>
       <Hero title="News" sub="ニュース" />
+      {children}
     </>
   );
 }
