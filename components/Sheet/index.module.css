@@ -2,6 +2,7 @@
     position: relative;
     background-color: #fff;
     width: calc(100% - 32px);
+    margin: -40px auto 0;
     padding: 40px 16px;
     border-radius: 8px;
 }
