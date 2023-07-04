@@ -1,0 +1,29 @@
+.footer {
+    padding: 16px 24px;
+    color: var(--color-text-secondary);
+    text-align: center;
+}
+
+.nav {
+    margin-bottom: 24px;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.item {
+    width: calc(100% / 2);
+}
+
+@media (min-width: 768px) {
+    .list {
+        gap: 56px;
+    }
+
+    .item {
+        width: auto;
+    }
+}
