@@ -25,8 +25,43 @@
   font-family: var(--font);
 }
 
+.news {
+  position: relative;
+  width: calc(100% - 32px);
+  margin: -40px auto;
+  padding: 24px 40px;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.newsTitle {
+  font-size: 24px;
+}
+
+.newsLink {
+  max-width: 300px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 @media (min-width:768px) {
+  .newsLink {
+    position: absolute;
+    right: -16px;
+    bottom: -40px;
+  }
+}
+
+@media (min-width:992px) {
+  .news {
+    width: calc(100% - 160px);
+  }
+
   .title {
     font-size: 56px;
+  }
+
+  .newsLink {
+    right: -40px;
   }
 }

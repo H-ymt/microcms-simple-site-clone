@@ -3,6 +3,7 @@ import { getNewsList } from "@/libs/microcms";
 import { NEWS_LIST_LIMIT } from "@/constants";
 import NewsList from "@/components/NewsList";
 import styles from "./page.module.css";
+import ButtonLink from "@/components/ButtonLink";
 
 export const revalidate = 60;
 
@@ -25,6 +26,9 @@ export default async function Page() {
       <section className={styles.news}>
         <h2 className={styles.newsTitle}>News</h2>
         <NewsList articles={data.contents} />
+        <div className={styles.newsLink}>
+          <ButtonLink href="/news">もっとみる</ButtonLink>
+        </div>
       </section>
     </>
   );
