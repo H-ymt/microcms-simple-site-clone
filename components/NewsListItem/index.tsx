@@ -1,7 +1,9 @@
 import { Article } from "@/libs/microcms";
 import styles from "./index.module.css";
+import Category from "../Category";
 import Link from "next/link";
 import Image from "next/image";
+import PublishDate from "../Date";
 
 type Props = {
   news: Article;
@@ -24,6 +26,10 @@ export default function NewsListItem({ news }: Props) {
         )}
         <dl className={styles.content}>
           <dt className={styles.title}>{news.title}</dt>
+          <dd className={styles.meta}>
+            <Category category={news.category} />
+            <PublishDate date={news.publishedAt || news.createdAt} />
+          </dd>
         </dl>
       </Link>
     </li>

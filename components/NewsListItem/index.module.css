@@ -1,0 +1,40 @@
+.list+.list {
+    border-top: 1px solid var(--color-border);
+}
+
+.link {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: 24px 0;
+}
+
+.thumbnail {
+    display: none;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.meta {
+    display: flex;
+    align-items: center;
+}
+
+@media (min-width: 568px) {
+    .thumbnail {
+        display: inline-block;
+        max-width: 200px;
+        max-height: 105px;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+}
+
+@media (min-width: 768px) {
+    .title {
+        font-size: 18px;
+    }
+}
