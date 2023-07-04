@@ -1,6 +1,7 @@
 .button {
     display: block;
     width: 100%;
+    max-width: 300px;
     padding: 16px 24px;
     border-radius: 12px;
     background: url('/arrow.svg') no-repeat right 20px center, var(--color-button-primary);
