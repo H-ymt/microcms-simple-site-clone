@@ -19,13 +19,14 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #333;
+    background-color: #e5e1e1;
     color: #fff;
     transition: .3s ease;
 }
 
 .list {
     display: none;
+    color: var(--color-text-primary);
     font-size: 20px;
 }
 
