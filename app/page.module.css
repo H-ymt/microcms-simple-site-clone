@@ -28,6 +28,7 @@
 .news {
   position: relative;
   width: calc(100% - 32px);
+  max-width: 840px;
   margin: -40px auto;
   padding: 24px 40px;
   border-radius: 12px;
@@ -93,10 +94,10 @@
   width: 100px;
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
   .newsLink {
     position: absolute;
-    right: -16px;
+    right: -8px;
     bottom: -40px;
   }
 
@@ -116,11 +117,7 @@
   }
 }
 
-@media (min-width:992px) {
-  .news {
-    width: calc(100% - 160px);
-  }
-
+@media (min-width: 992px) {
   .title {
     font-size: 56px;
   }

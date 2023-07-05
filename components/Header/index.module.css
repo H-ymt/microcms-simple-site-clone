@@ -16,7 +16,10 @@
     transition: 0.3s ease;
 }
 
-.logo:hover {
-    rotate: -10deg;
-    transition: .3s ease;
+@media (min-width: 992px) {
+    .logo:hover {
+        rotate: -10deg;
+        transition: .3s ease;
+    }
+
 }
